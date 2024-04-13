@@ -3,11 +3,11 @@ class Stack {
         this.items = [];
     }
 
-    enqueue(element) {
+    push(element) {
         this.items.push(element)
     }
 
-    dequeue(element) {
+    pop(element) {
         this.items.pop(element)
     }
 
@@ -20,23 +20,25 @@ class Stack {
     }
 }
 
-// Create a new Stack
+// 스택 생성
 let newStack = new Stack()
 
-// Push elements on the stack
+// 스택 push
 newStack.push(1)
 newStack.push(4)
 newStack.push(6)
 newStack.push(112)
 console.log(newStack)
-//display the stack's content
+
+
+// 스택 출력
 newStack.print()
 
 
-//pop an element
+//스택 pop
 newStack.pop()
 console.log('pop', newStack)
 
-//check if the stack is empty
+//스택 empty 체크
 newStack.inEmpty()
 console.log('empty', newStack)
